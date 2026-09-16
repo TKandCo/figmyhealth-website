@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" role="img" aria-label="Minh họa bột rau quế và ngò rí sấy thăng hoa cùng lá tươi">
+  <defs>
+    <radialGradient id="bgRQ" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#eef3ea"/>
+      <stop offset="100%" stop-color="#f4f7f0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="300" r="270" fill="url(#bgRQ)"/>
+
+  <!-- pouch mockup -->
+  <g transform="translate(300,330)">
+    <path d="M-95-150c0-24 20-30 95-30s95 6 95 30v270c0 30-24 54-95 54s-95-24-95-54v-270z" fill="#eef0e6" stroke="#3a4f3c" stroke-width="3"/>
+    <path d="M-95-150c0-24 20-30 95-30s95 6 95 30" fill="none" stroke="#3a4f3c" stroke-width="3"/>
+    <rect x="-70" y="-118" width="140" height="150" rx="10" fill="#ffffff"/>
+    <text x="0" y="-70" text-anchor="middle" font-family="'Fraunces',serif" font-weight="700" font-size="17" fill="#3a4f3c">FigMyHealth</text>
+    <text x="0" y="-44" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="12" fill="#6b7a63">Bột Rau Quế</text>
+    <text x="0" y="-26" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="12" fill="#6b7a63">&amp; Ngò Rí</text>
+    <g transform="translate(0,10)">
+      <path d="M-14 24c4-20 14-32 14-32s10 12 14 32c2 12-4 22-14 22s-16-10-14-22z" fill="#5e8158"/>
+      <path d="M18 24c4-18 12-28 12-28s8 10 12 28c2 10-4 18-12 18s-14-8-12-18z" fill="#6f9166"/>
+    </g>
+    <rect x="-70" y="80" width="140" height="26" rx="13" fill="#f4f0dd" stroke="#dda44f" stroke-width="1.5"/>
+    <text x="0" y="98" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-weight="700" font-size="11" fill="#a5762a">SẮP RA MẮT</text>
+  </g>
+
+  <!-- basil leaf sprig left -->
+  <g transform="translate(110,220) rotate(-18)">
+    <path d="M0 0c30-6 54 10 60 34-28 6-54-8-60-34z" fill="#4c6b4d"/>
+    <path d="M14 40c30-2 56 16 60 40-30 4-56-14-60-40z" fill="#5e8158"/>
+    <path d="M4 82c28 0 52 18 54 42-28 2-52-16-54-42z" fill="#6f9166"/>
+  </g>
+
+  <!-- cilantro sprig right -->
+  <g transform="translate(470,240)">
+    <path d="M0 0c-4 20 10 36 30 40 2-20-10-36-30-40z" fill="#5e8158"/>
+    <path d="M-10 46c-4 18 8 34 26 38 2-18-8-34-26-38z" fill="#6f9166"/>
+    <path d="M6 88c-2 18 10 32 28 34 0-18-10-32-28-34z" fill="#4c6b4d"/>
+  </g>
+
+  <text x="60" y="580" font-family="'Fraunces',serif" font-size="15" fill="#726f66" font-style="italic">Rau quế &amp; ngò rí — sấy thăng hoa</text>
+</svg>

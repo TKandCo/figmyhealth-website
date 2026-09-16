@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="Minh họa nhiều giống sung khác nhau với màu vỏ và hình dáng đa dạng">
+  <defs>
+    <radialGradient id="bgGS" cx="50%" cy="15%" r="95%">
+      <stop offset="0%" stop-color="#faecd4"/>
+      <stop offset="100%" stop-color="#f4f7f0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGS)"/>
+
+  <!-- ground line -->
+  <path d="M40 400h720" stroke="#e3ddcc" stroke-width="2"/>
+
+  <!-- fig 1: Black Mission -->
+  <g transform="translate(120,300)">
+    <path d="M0 -110c50 10 80 60 76 110-4 54-50 90-96 86-46-6-78-54-72-108C-86-76-50-120 0-110z" fill="#3d2b3a"/>
+    <path d="M-4-110c-4-14 0-26 10-36" stroke="#5e8158" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <text x="0" y="130" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="13" font-weight="700" fill="#2b3b2e">Black Mission</text>
+  </g>
+
+  <!-- fig 2: Brown Turkey -->
+  <g transform="translate(290,300)">
+    <path d="M0 -100c46 8 74 54 70 100-4 50-46 82-88 78-42-6-72-50-66-98C-84-70-46-108 0-100z" fill="#7a4457"/>
+    <path d="M-4-100c-4-12 0-24 9-32" stroke="#5e8158" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <text x="0" y="120" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="13" font-weight="700" fill="#2b3b2e">Brown Turkey</text>
+  </g>
+
+  <!-- fig 3: Kadota -->
+  <g transform="translate(460,308)">
+    <path d="M0 -96c42 6 68 50 64 92-4 46-42 76-80 72-38-6-66-46-60-90C-76-66-40-102 0-96z" fill="#dda44f"/>
+    <path d="M-4-96c-4-10 0-22 8-30" stroke="#5e8158" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <text x="0" y="112" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="13" font-weight="700" fill="#2b3b2e">Kadota</text>
+  </g>
+
+  <!-- fig 4: Adriatic -->
+  <g transform="translate(610,300)">
+    <path d="M0 -106c48 8 76 56 72 104-4 52-48 86-92 82-44-6-76-52-70-102C-82-72-46-114 0-106z" fill="#b7c27a"/>
+    <path d="M-4-106c-4-12 0-24 9-32" stroke="#5e8158" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <text x="0" y="126" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="13" font-weight="700" fill="#2b3b2e">Adriatic</text>
+  </g>
+
+  <!-- fig 5: Tiger stripe -->
+  <g transform="translate(700,330)">
+    <path d="M0 -70c34 6 54 38 50 70-3 34-32 56-60 54-28-4-48-34-44-64C-50-46-24-76 0-70z" fill="#e9dca0"/>
+    <g stroke="#8fa66a" stroke-width="4" opacity=".8">
+      <path d="M-24-48c6 30 6 60 4 90"/>
+      <path d="M-4-58c4 34 4 68 0 96"/>
+      <path d="M16-52c-2 32 0 62 4 88"/>
+    </g>
+    <text x="0" y="92" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="12.5" font-weight="700" fill="#2b3b2e">Tiger fig</text>
+  </g>
+
+  <!-- fig 6: Sung nếp VN, smaller cluster -->
+  <g transform="translate(200,150)">
+    <circle cx="-14" cy="0" r="20" fill="#c98a9b"/>
+    <circle cx="16" cy="10" r="18" fill="#c17c8f"/>
+    <circle cx="0" cy="30" r="17" fill="#b76f84"/>
+    <text x="2" y="66" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="12.5" font-weight="700" fill="#2b3b2e">Sung nếp VN</text>
+  </g>
+
+  <text x="60" y="60" font-family="'Fraunces',serif" font-size="17" fill="#4c6b4d" font-style="italic">Ficus carica — nhiều giống, nhiều sắc màu</text>
+</svg>

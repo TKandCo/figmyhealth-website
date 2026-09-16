@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="Minh họa rau quế (Ocimum basilicum) tươi">
+  <defs>
+    <radialGradient id="bgRQi" cx="65%" cy="25%" r="90%">
+      <stop offset="0%" stop-color="#eef3ea"/>
+      <stop offset="100%" stop-color="#f4f7f0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgRQi)"/>
+  <g transform="translate(400,260)">
+    <path d="M0 140c0-90 0-170 0-230" stroke="#6f9166" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <g fill="#4c6b4d">
+      <path d="M0-90c-40-30-90-24-116 10 30 36 84 40 116 10z"/>
+      <path d="M0-90c40-30 90-24 116 10-30 36-84 40-116 10z"/>
+    </g>
+    <g fill="#5e8158">
+      <path d="M0-30c-46-28-98-16-124 20 34 34 90 34 124 0z"/>
+      <path d="M0-30c46-28 98-16 124 20-34 34-90 34-124 0z"/>
+    </g>
+    <g fill="#6f9166">
+      <path d="M0 40c-40-22-86-10-108 22 30 28 78 26 108-2z"/>
+      <path d="M0 40c40-22 86-10 108 22-30 28-78 26-108-2z"/>
+    </g>
+    <g fill="#87a679">
+      <path d="M0 100c-30-16-64-6-80 18 22 20 58 18 80-2z"/>
+      <path d="M0 100c30-16 64-6 80 18-22 20-58 18-80-2z"/>
+    </g>
+  </g>
+  <g font-family="'Be Vietnam Pro',sans-serif" font-size="13" font-weight="700">
+    <g transform="translate(560,120)">
+      <rect width="180" height="52" rx="26" fill="#ffffff" opacity=".92"/>
+      <circle cx="30" cy="26" r="16" fill="#e8efe3"/>
+      <text x="30" y="31" text-anchor="middle" fill="#4c6b4d" font-size="12">K</text>
+      <text x="58" y="31" fill="#2b3b2e">Vitamin K, A, C</text>
+    </g>
+    <g transform="translate(540,190)">
+      <rect width="200" height="52" rx="26" fill="#ffffff" opacity=".92"/>
+      <circle cx="30" cy="26" r="16" fill="#f3e3e7"/>
+      <path d="M22 26l6 6 12-13" fill="none" stroke="#a86c7e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="58" y="31" fill="#2b3b2e">Polyphenol, flavonoid</text>
+    </g>
+  </g>
+  <text x="60" y="440" font-family="'Fraunces',serif" font-size="15" fill="#726f66" font-style="italic">Ocimum basilicum — rau quế</text>
+</svg>

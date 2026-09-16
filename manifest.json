@@ -1,0 +1,150 @@
+{
+  "_readme": "Danh sách toàn bộ vị trí hình ảnh trên website. Khi gửi ảnh mới (qua thư mục Google Drive dùng chung), hãy đặt tên file đúng theo cột 'file' bên dưới (hoặc ghi rõ 'ảnh này thay cho slot nào' nếu bạn dùng tên khác) — nhờ vậy việc cập nhật ảnh diễn ra nhanh, không cần đoán vị trí. Cột 'status' là 'illustration' (minh hoạ tự vẽ, đang chờ ảnh thật) hoặc 'photo' (đã dùng ảnh thật).",
+  "slots": [
+    {
+      "id": "logo",
+      "file": "assets/img/logo-placeholder.svg",
+      "usedOn": ["index.html header", "index.html footer", "blog/*.html header/footer"],
+      "recommendedSize": "Vuông, tối thiểu 200x200px, nền trong suốt (PNG hoặc SVG)",
+      "status": "illustration",
+      "note": "Logo thật của thương hiệu, chưa nhận được."
+    },
+    {
+      "id": "favicon",
+      "file": "assets/img/favicon.svg",
+      "usedOn": ["Tab trình duyệt tất cả các trang"],
+      "recommendedSize": "Vuông, 64x64px trở lên",
+      "status": "illustration"
+    },
+    {
+      "id": "hero-banner",
+      "file": "assets/img/hero-banner.svg",
+      "usedOn": ["index.html — banner đầu trang (hero)"],
+      "recommendedSize": "Vuông hoặc gần vuông, tối thiểu 1000x1000px — ảnh sản phẩm chính, đẹp nhất nên có ở đây",
+      "status": "illustration",
+      "priority": "cao nhất — đây là ảnh đầu tiên khách thấy"
+    },
+    {
+      "id": "pouch-mockup",
+      "file": "assets/img/pouch-mockup.svg",
+      "usedOn": ["Card sản phẩm nhỏ ở sidebar các bài blog"],
+      "recommendedSize": "Vuông, tối thiểu 300x300px — ảnh cận hộp/túi sản phẩm",
+      "status": "illustration"
+    },
+    {
+      "id": "fig-illustration",
+      "file": "assets/img/fig-illustration.svg",
+      "usedOn": ["index.html — mục nguyên liệu, quả sung"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 800x500px",
+      "status": "illustration"
+    },
+    {
+      "id": "herb-illustration",
+      "file": "assets/img/herb-illustration.svg",
+      "usedOn": ["index.html — mục nguyên liệu, cỏ sữa lá lớn"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 800x500px",
+      "status": "illustration"
+    },
+    {
+      "id": "usage-water",
+      "file": "assets/img/usage-water.svg",
+      "usedOn": ["index.html — mục cách dùng, bước 1 (pha nước ấm)"],
+      "recommendedSize": "Tỷ lệ 4:3, tối thiểu 800x600px",
+      "status": "illustration"
+    },
+    {
+      "id": "usage-honey",
+      "file": "assets/img/usage-honey.svg",
+      "usedOn": ["index.html — mục cách dùng, bước 2 (kết hợp mật ong)"],
+      "recommendedSize": "Tỷ lệ 4:3, tối thiểu 800x600px",
+      "status": "illustration"
+    },
+    {
+      "id": "usage-cook",
+      "file": "assets/img/usage-cook.svg",
+      "usedOn": ["index.html — mục cách dùng, bước 3 (thêm vào món ăn)"],
+      "recommendedSize": "Tỷ lệ 4:3, tối thiểu 800x600px",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-hero-say-thang-hoa",
+      "file": "assets/img/blog/hero-say-thang-hoa.svg",
+      "usedOn": ["blog/say-thang-hoa-la-gi.html — ảnh đầu bài", "thẻ bài viết ở trang blog/trang chủ"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px — lý tưởng: ảnh chụp thật quy trình sấy/đóng gói",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-diagram-cau-truc",
+      "file": "assets/img/blog/diagram-cau-truc.svg",
+      "usedOn": ["blog/say-thang-hoa-la-gi.html — hình so sánh cấu trúc"],
+      "recommendedSize": "Tỷ lệ ~16:9",
+      "status": "illustration",
+      "note": "Có thể giữ dạng sơ đồ minh hoạ lâu dài — không bắt buộc phải là ảnh chụp."
+    },
+    {
+      "id": "blog-hero-qua-sung",
+      "file": "assets/img/blog/hero-qua-sung.svg",
+      "usedOn": ["blog/khoa-hoc-qua-sung.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-hero-co-sua",
+      "file": "assets/img/blog/hero-co-sua.svg",
+      "usedOn": ["blog/co-sua-la-lon-cay-thuoc-nam.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-hero-chat-xo",
+      "file": "assets/img/blog/hero-chat-xo.svg",
+      "usedOn": ["blog/chat-xo-hoa-tan-thieu-hut.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10",
+      "status": "illustration",
+      "note": "Là biểu đồ số liệu — có thể giữ dạng minh hoạ lâu dài."
+    },
+    {
+      "id": "blog-hero-chon-mua",
+      "file": "assets/img/blog/hero-chon-mua.svg",
+      "usedOn": ["blog/cach-chon-thuc-pham-bo-sung-uy-tin.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-hero-bo-phan-cay-sung",
+      "file": "assets/img/blog/hero-bo-phan-cay-sung.svg",
+      "usedOn": ["blog/cong-nang-cac-bo-phan-cay-sung.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px",
+      "status": "illustration"
+    },
+    {
+      "id": "blog-hero-giong-sung",
+      "file": "assets/img/blog/hero-giong-sung.svg",
+      "usedOn": ["blog/cac-giong-sung-tren-the-gioi.html — ảnh đầu bài", "thẻ bài viết"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 1200x750px",
+      "status": "illustration"
+    },
+    {
+      "id": "product2-hero",
+      "file": "assets/img/products/rau-que-ngo-ri-hero.svg",
+      "usedOn": ["bot-rau-que-ngo-ri.html — ảnh hero sản phẩm mới"],
+      "recommendedSize": "Vuông, tối thiểu 1000x1000px — ảnh gói sản phẩm hoặc lá tươi",
+      "status": "illustration",
+      "note": "Sản phẩm 2 (bột rau quế & ngò rí) — đang giai đoạn 'sắp ra mắt', chưa có ảnh thật."
+    },
+    {
+      "id": "product2-rau-que",
+      "file": "assets/img/products/rau-que-illustration.svg",
+      "usedOn": ["bot-rau-que-ngo-ri.html — mục nguyên liệu, rau quế"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 800x500px",
+      "status": "illustration"
+    },
+    {
+      "id": "product2-ngo-ri",
+      "file": "assets/img/products/ngo-ri-illustration.svg",
+      "usedOn": ["bot-rau-que-ngo-ri.html — mục nguyên liệu, ngò rí"],
+      "recommendedSize": "Tỷ lệ 16:10, tối thiểu 800x500px",
+      "status": "illustration"
+    }
+  ]
+}

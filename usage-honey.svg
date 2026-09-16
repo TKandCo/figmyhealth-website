@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kết hợp cùng mật ong">
+  <rect width="400" height="300" fill="#faecd4"/>
+  <circle cx="70" cy="60" r="70" fill="#fdf3e2"/>
+  <g transform="translate(150,60)">
+    <path d="M40 0c26 0 44 20 44 46 0 40-44 110-44 110S-4 86-4 46C-4 20 14 0 40 0z" fill="#dda44f"/>
+    <path d="M40 20c16 0 28 13 28 30 0 26-28 70-28 70S12 76 12 50c0-17 12-30 28-30z" fill="#c8873a" opacity=".55"/>
+    <rect x="14" y="-14" width="52" height="20" rx="6" fill="#7a4457"/>
+  </g>
+  <g transform="translate(255,150)">
+    <path d="M0 34c22-30 55-30 70 0 15-38-6-72-35-72S-15-4 0 34z" fill="#7a4457"/>
+  </g>
+  <g fill="#c8873a" opacity=".8">
+    <circle cx="120" cy="220" r="4"/><circle cx="140" cy="235" r="3"/><circle cx="105" cy="240" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" width="100%" height="100%" role="img" aria-label="Mô phỏng bao bì túi bột quả sung và cỏ sữa lá lớn 100g">
+  <defs>
+    <linearGradient id="pg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5f8560"/>
+      <stop offset="100%" stop-color="#3a4f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="380" fill="none"/>
+  <path d="M20 46 Q8 16 34 6 L266 6 Q292 16 280 46 L296 330 Q298 362 264 364 L36 364 Q2 362 4 330 Z" fill="url(#pg2)"/>
+  <path d="M34 6 Q8 16 20 46 L28 96 L272 96 L280 46 Q292 16 266 6Z" fill="#2b3b2e"/>
+  <circle cx="150" cy="6" r="5" fill="#dda44f"/>
+  <rect x="46" y="130" width="208" height="190" rx="18" fill="#fbf7ef"/>
+  <text x="150" y="185" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#2b3b2e" font-weight="700">FigMyHealth</text>
+  <text x="150" y="212" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#7a4457" font-style="italic">Bột Quả Sung</text>
+  <text x="150" y="232" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#7a4457" font-style="italic">&amp; Cỏ Sữa Lá Lớn</text>
+  <text x="150" y="252" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#a9a59b">Sấy thăng hoa nguyên chất</text>
+  <circle cx="150" cy="285" r="26" fill="#e8efe3"/>
+  <path d="M150 265c9 7 14 16 14 25a14 14 0 1 1-28 0c0-9 5-18 14-25z" fill="#93576a"/>
+  <text x="150" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#4c6b4d" font-weight="700">100g / hộp</text>
+</svg>

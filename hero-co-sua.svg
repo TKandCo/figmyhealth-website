@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="Minh họa cây cỏ sữa lá lớn mọc dại ven đường với thân bò sát đất và lá đối xứng">
+  <defs>
+    <radialGradient id="bgCS" cx="40%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#f4f7f0"/>
+      <stop offset="100%" stop-color="#e8efe3"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgCS)"/>
+  <!-- đất / vệ đường -->
+  <path d="M0 430c150-26 300 20 450 4s250-40 350-6V500H0Z" fill="#dcd3bd" opacity=".55"/>
+
+  <!-- các nhánh cỏ sữa bò lan -->
+  <g stroke="#4c6b4d" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M120 420c40-10 70-40 90-70"/>
+    <path d="M210 420c60 4 110-24 150-64"/>
+    <path d="M360 424c70 10 130-14 180-60"/>
+    <path d="M540 420c50-4 90-30 120-58"/>
+  </g>
+  <!-- lá đối xứng dọc thân -->
+  <g fill="#7ea07d">
+    <ellipse cx="150" cy="380" rx="14" ry="7" transform="rotate(-30 150 380)"/>
+    <ellipse cx="130" cy="392" rx="14" ry="7" transform="rotate(20 130 392)"/>
+    <ellipse cx="260" cy="368" rx="14" ry="7" transform="rotate(-25 260 368)"/>
+    <ellipse cx="245" cy="382" rx="14" ry="7" transform="rotate(18 245 382)"/>
+    <ellipse cx="420" cy="374" rx="14" ry="7" transform="rotate(-20 420 374)"/>
+    <ellipse cx="400" cy="388" rx="14" ry="7" transform="rotate(22 400 388)"/>
+    <ellipse cx="590" cy="378" rx="14" ry="7" transform="rotate(-28 590 378)"/>
+    <ellipse cx="572" cy="392" rx="14" ry="7" transform="rotate(16 572 392)"/>
+  </g>
+  <!-- giọt nhựa mủ trắng đặc trưng -->
+  <g transform="translate(340,330)">
+    <ellipse cx="0" cy="0" rx="8" ry="11" fill="#fdf7ee" stroke="#dda44f" stroke-width="1.5"/>
+    <text x="0" y="34" text-anchor="middle" font-family="'Be Vietnam Pro',sans-serif" font-size="11" fill="#726f66">nhựa mủ trắng</text>
+  </g>
+
+  <!-- nhãn tên khoa học -->
+  <g transform="translate(50,60)">
+    <rect width="330" height="70" rx="16" fill="#ffffff" opacity=".9"/>
+    <text x="20" y="30" font-family="'Fraunces',serif" font-size="18" font-weight="600" fill="#2b3b2e">Euphorbia hirta L.</text>
+    <text x="20" y="52" font-family="'Be Vietnam Pro',sans-serif" font-size="13" fill="#726f66">Cỏ sữa lá lớn — cây thuốc nam mọc dại</text>
+  </g>
+</svg>
