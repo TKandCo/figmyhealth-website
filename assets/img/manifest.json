@@ -1,13 +1,14 @@
 {
-  "_readme": "Danh sách toàn bộ vị trí hình ảnh trên website. Khi gửi ảnh mới (qua thư mục Google Drive dùng chung), hãy đặt tên file đúng theo cột 'file' bên dưới (hoặc ghi rõ 'ảnh này thay cho slot nào' nếu bạn dùng tên khác) — nhờ vậy việc cập nhật ảnh diễn ra nhanh, không cần đoán vị trí. Cột 'status' là 'illustration' (minh hoạ tự vẽ, đang chờ ảnh thật) hoặc 'photo' (đã dùng ảnh thật).",
+  "_readme": "Danh sách toàn bộ vị trí hình ảnh trên website. Khi gửi ảnh mới (qua thư mục Google Drive dùng chung), hãy đặt tên file đúng theo cột 'file' bên dưới (hoặc ghi rõ 'ảnh này thay cho slot nào' nếu bạn dùng tên khác) — nhờ vậy việc cập nhật ảnh diễn ra nhanh, không cần đoán vị trí. Cột 'status' là 'illustration' (minh hoạ tự vẽ, đang chờ ảnh thật), 'photo' (đã dùng ảnh thật), hoặc 'final-locked' (đã chốt, KHÔNG được tự thay thế dù có ảnh mới trùng tên file gửi tới).",
   "slots": [
     {
       "id": "logo",
       "file": "assets/img/logo-placeholder.svg",
       "usedOn": ["index.html header", "index.html footer", "blog/*.html header/footer"],
       "recommendedSize": "Vuông, tối thiểu 200x200px, nền trong suốt (PNG hoặc SVG)",
-      "status": "illustration",
-      "note": "Logo thật của thương hiệu, chưa nhận được."
+      "status": "final-locked",
+      "locked": true,
+      "note": "Chủ shop đã quyết định GIỮ NGUYÊN logo này vĩnh viễn (yêu cầu ngày 17/09/2026). KHÔNG thay thế file này nữa kể cả khi có ảnh/logo mới gửi tới — nếu người dùng gửi ảnh tên 'logo', hỏi lại trước khi áp dụng."
     },
     {
       "id": "favicon",
