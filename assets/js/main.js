@@ -11,7 +11,7 @@
   // Dán URL Google Apps Script Web App vào đây nếu muốn đơn hàng
   // được ghi thêm vào Google Sheet (xem hướng dẫn trong README.md).
   // Để trống ("") nếu chưa dùng tính năng này.
-  var GOOGLE_SHEET_WEBHOOK = "";
+  var GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbwlBDGfZoI6ZH3C2_lRHIaq_92B6k3ZyerY-HbZiaqnx7T3cQvFgE5WCI5-WwArGc0x/exec";
 
   /* -----------------------------------------------------
    * 1. NGÔN NGỮ / LANGUAGE
@@ -24,7 +24,7 @@
       sending: "Đang gửi...",
       ok: "Đã gửi thành công! Chúng tôi sẽ liên hệ lại sớm nhất qua điện thoại/Zalo.",
       err: "Có lỗi khi gửi form. Vui lòng gọi trực tiếp 0968 944 077 hoặc nhắn Zalo giúp mình nhé.",
-      needSetup: "Form đặt hàng chưa được kết nối (thiếu Formspree ID) — vui lòng gọi 0968 944 077 hoặc nhắn Zalo để đặt hàng, hoặc xem README.md để kích hoạt form."
+      needSetup: "Form đặt hàng chưa được kết nối — vui lòng gọi 0968 944 077 hoặc nhắn Zalo để đặt hàng, hoặc xem google-apps-script/Code.gs để kích hoạt form."
     },
     en: {
       title: "FigMyHealth – Freeze-Dried Fig & Euphorbia Hirta Powder",
@@ -33,7 +33,7 @@
       sending: "Sending...",
       ok: "Sent successfully! We'll get back to you shortly by phone/Zalo.",
       err: "Something went wrong sending the form. Please call +84 968 944 077 or message us on Zalo.",
-      needSetup: "The order form isn't connected yet (missing Formspree ID) — please call +84 968 944 077 or message on Zalo, or see README.md to activate the form."
+      needSetup: "The order form isn't connected yet — please call +84 968 944 077 or message on Zalo, or see google-apps-script/Code.gs to activate the form."
     },
     zh: {
       title: "FigMyHealth – 冻干无花果与大飞扬草粉",
@@ -42,7 +42,7 @@
       sending: "正在发送...",
       ok: "发送成功！我们会尽快通过电话/Zalo与您联系。",
       err: "表单发送出现问题，请直接致电 +84 968 944 077 或通过 Zalo 联系我们。",
-      needSetup: "订购表单尚未连接（缺少 Formspree ID）——请致电 +84 968 944 077 或 Zalo 联系下单，或查看 README.md 完成激活。"
+      needSetup: "订购表单尚未连接——请致电 +84 968 944 077 或 Zalo 联系下单，或查看 google-apps-script/Code.gs 完成激活。"
     }
   };
 
@@ -152,9 +152,8 @@
   /* -----------------------------------------------------
    * 6. GỬI FORM (đặt hàng + hợp tác quốc tế)
    * ----------------------------------------------------- */
-  function isFormReady(form) {
-    var action = form.getAttribute("action") || "";
-    return action.indexOf("YOUR_FORM_ID") === -1 && action.indexOf("formspree.io/f/") > -1;
+  function isFormReady() {
+    return !!GOOGLE_SHEET_WEBHOOK && GOOGLE_SHEET_WEBHOOK.indexOf("script.google.com") > -1;
   }
 
   function handleFormSubmit(formId, statusId) {
@@ -163,29 +162,28 @@
     if (!form) return;
 
     form.addEventListener("submit", function (e) {
+      e.preventDefault();
       var lang = document.documentElement.getAttribute("lang") || "vi";
       var t = TEXT[lang];
 
-      if (!isFormReady(form)) {
-        e.preventDefault();
+      if (!isFormReady()) {
         status.textContent = t.needSetup;
         status.className = "form-status show err";
         return;
       }
 
-      e.preventDefault();
       status.textContent = t.sending;
       status.className = "form-status show";
 
       var data = new FormData(form);
 
-      fetch(form.action, {
+      fetch(GOOGLE_SHEET_WEBHOOK, {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
+        body: data
       })
-        .then(function (resp) {
-          if (resp.ok) {
+        .then(function (resp) { return resp.json(); })
+        .then(function (json) {
+          if (json && json.result === "success") {
             status.textContent = t.ok;
             status.className = "form-status show ok";
             form.reset();
@@ -198,19 +196,6 @@
           status.textContent = t.err;
           status.className = "form-status show err";
         });
-
-      // Gửi thêm (không chặn luồng chính) sang Google Sheet nếu đã cấu hình
-      if (GOOGLE_SHEET_WEBHOOK) {
-        try {
-          fetch(GOOGLE_SHEET_WEBHOOK, {
-            method: "POST",
-            mode: "no-cors",
-            body: data
-          });
-        } catch (err) {
-          /* im lặng bỏ qua nếu lỗi, không ảnh hưởng luồng gửi chính */
-        }
-      }
     });
   }
 

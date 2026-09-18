@@ -589,7 +589,7 @@
         </a>
       </div>
 
-      <form class="order-form" id="orderForm" action="https://formspree.io/f/mljeyzwz" method="POST">
+      <form class="order-form" id="orderForm" action="https://script.google.com/macros/s/AKfycbwlBDGfZoI6ZH3C2_lRHIaq_92B6k3ZyerY-HbZiaqnx7T3cQvFgE5WCI5-WwArGc0x/exec" method="POST">
         <h3><span data-i18n="vi">Gửi Yêu Cầu Đặt Hàng</span><span data-i18n="en">Send an Order Request</span><span data-i18n="zh">提交订购需求</span></h3>
         <p class="sub"><span data-i18n="vi">Điền thông tin bên dưới, chúng tôi sẽ gọi lại xác nhận trước khi giao hàng.</span>
            <span data-i18n="en">Fill in the details below — we'll call to confirm before shipping.</span>
@@ -600,16 +600,49 @@
 
         <div class="form-row">
           <div class="form-field">
-            <label for="ofName" data-i18n="vi">Họ và tên *</label>
-            <label for="ofName" data-i18n="en">Full name *</label>
-            <label for="ofName" data-i18n="zh">姓名 *</label>
+            <label for="ofName" data-i18n="vi">1. Tên của bạn là gì? *</label>
+            <label for="ofName" data-i18n="en">1. What's your name? *</label>
+            <label for="ofName" data-i18n="zh">1. 您的姓名是？ *</label>
             <input type="text" id="ofName" name="name" required>
           </div>
           <div class="form-field">
-            <label for="ofPhone" data-i18n="vi">Số điện thoại *</label>
-            <label for="ofPhone" data-i18n="en">Phone number *</label>
-            <label for="ofPhone" data-i18n="zh">电话号码 *</label>
+            <label for="ofPhone" data-i18n="vi">2. SĐT / Zalo (WhatsApp) để liên hệ sớm nhất *</label>
+            <label for="ofPhone" data-i18n="en">2. Phone / Zalo (WhatsApp) so we can reach you fast *</label>
+            <label for="ofPhone" data-i18n="zh">2. 电话/Zalo（WhatsApp），方便我们尽快联系您 *</label>
             <input type="tel" id="ofPhone" name="phone" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="ofInterest" data-i18n="vi">3. Điều gì khiến bạn quan tâm đến sản phẩm sấy thăng hoa/sấy lạnh của tụi mình?</label>
+            <label for="ofInterest" data-i18n="en">3. What made you interested in our freeze-dried / cold-dried product?</label>
+            <label for="ofInterest" data-i18n="zh">3. 是什么让您对我们的冻干/低温干燥产品感兴趣？</label>
+            <textarea id="ofInterest" name="interest_reason" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div class="form-field full" style="margin-bottom:14px;">
+          <label data-i18n="vi">4. Bạn dự định dùng cho ai?</label>
+          <label data-i18n="en">4. Who is this for?</label>
+          <label data-i18n="zh">4. 您打算给谁使用？</label>
+          <div class="radio-group" id="userGroup">
+            <span class="radio-chip"><input type="radio" name="intended_user" id="u1" value="Bản thân"><label for="u1"><span data-i18n="vi">Bản thân</span><span data-i18n="en">Myself</span><span data-i18n="zh">自己</span></label></span>
+            <span class="radio-chip"><input type="radio" name="intended_user" id="u2" value="Con nhỏ"><label for="u2"><span data-i18n="vi">Con nhỏ</span><span data-i18n="en">My child</span><span data-i18n="zh">孩子</span></label></span>
+            <span class="radio-chip"><input type="radio" name="intended_user" id="u3" value="Người lớn tuổi"><label for="u3"><span data-i18n="vi">Người lớn tuổi</span><span data-i18n="en">Elderly family member</span><span data-i18n="zh">长辈</span></label></span>
+            <span class="radio-chip"><input type="radio" name="intended_user" id="u4" value="Cả nhà dùng chung"><label for="u4"><span data-i18n="vi">Cả nhà dùng chung</span><span data-i18n="en">The whole family</span><span data-i18n="zh">全家共用</span></label></span>
+          </div>
+        </div>
+
+        <div class="form-field full" style="margin-bottom:14px;">
+          <label data-i18n="vi">5. Bạn biết đến website này từ đâu?</label>
+          <label data-i18n="en">5. How did you find our website?</label>
+          <label data-i18n="zh">5. 您是通过什么途径了解到本网站的？</label>
+          <div class="radio-group" id="sourceGroup">
+            <span class="radio-chip"><input type="radio" name="referral_source" id="s1" value="Bạn bè giới thiệu"><label for="s1"><span data-i18n="vi">Bạn bè giới thiệu</span><span data-i18n="en">Friend referral</span><span data-i18n="zh">朋友推荐</span></label></span>
+            <span class="radio-chip"><input type="radio" name="referral_source" id="s2" value="Mạng xã hội"><label for="s2"><span data-i18n="vi">Mạng xã hội</span><span data-i18n="en">Social media</span><span data-i18n="zh">社交媒体</span></label></span>
+            <span class="radio-chip"><input type="radio" name="referral_source" id="s3" value="Tìm kiếm Google"><label for="s3"><span data-i18n="vi">Tìm kiếm Google</span><span data-i18n="en">Google search</span><span data-i18n="zh">谷歌搜索</span></label></span>
+            <span class="radio-chip"><input type="radio" name="referral_source" id="s4" value="Nguồn khác"><label for="s4"><span data-i18n="vi">Nguồn khác</span><span data-i18n="en">Other</span><span data-i18n="zh">其他途径</span></label></span>
           </div>
         </div>
 
@@ -677,7 +710,7 @@
         </p>
       </div>
 
-      <form class="wholesale-form" id="wholesaleForm" action="https://formspree.io/f/mljeyzwz" method="POST">
+      <form class="wholesale-form" id="wholesaleForm" action="https://script.google.com/macros/s/AKfycbwlBDGfZoI6ZH3C2_lRHIaq_92B6k3ZyerY-HbZiaqnx7T3cQvFgE5WCI5-WwArGc0x/exec" method="POST">
         <input type="hidden" name="_subject" value="Yêu cầu hợp tác quốc tế - FigMyHealth Wholesale">
         <input type="hidden" name="form_type" value="wholesale">
         <div class="form-field">
@@ -861,7 +894,7 @@
   </div>
 </div>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=2"></script>
 <script src="assets/js/blog.js"></script>
 <script src="assets/js/chatbot.js"></script>
 </body>

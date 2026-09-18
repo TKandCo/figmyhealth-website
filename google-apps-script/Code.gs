@@ -23,8 +23,8 @@
  *      dán URL đó vào biến GOOGLE_SHEET_WEBHOOK ở đầu file.
  *
  * Sau bước này, mỗi đơn hàng gửi từ form trên web sẽ tự động
- * được ghi thêm vào Google Sheet VÀ gửi email cho bạn — song song
- * với việc form vẫn gửi về Formspree như bình thường.
+ * được ghi thêm vào Google Sheet VÀ gửi email cho bạn. Đây là nơi
+ * duy nhất nhận dữ liệu — form không còn gửi song song về Formspree nữa.
  */
 
 var NOTIFY_EMAIL = "johnlin121017@gmail.com";
@@ -43,6 +43,13 @@ function doPost(e) {
     }
 
     var isWholesale = params.form_type === "wholesale";
+
+    var extraNotes = [];
+    if (params.interest_reason) extraNotes.push("Lý do quan tâm: " + params.interest_reason);
+    if (params.intended_user) extraNotes.push("Dùng cho: " + params.intended_user);
+    if (params.referral_source) extraNotes.push("Biết đến từ: " + params.referral_source);
+    if (params.note) extraNotes.push("Ghi chú: " + params.note);
+
     var row = [
       new Date(),
       isWholesale ? "Đối tác quốc tế" : "Đơn hàng lẻ",
@@ -50,7 +57,7 @@ function doPost(e) {
       params.phone || params.email || "",
       params.package || params.country || "",
       params.address || params.quantity || "",
-      params.note || ""
+      extraNotes.join(" | ")
     ];
     sheet.appendRow(row);
 
